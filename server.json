@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.pipeworx-io/nasa-firms",
+  "title": "Nasa Firms",
+  "description": "NASA FIRMS MCP — active-fire / thermal-anomaly detections from MODIS and VIIRS.",
+  "version": "0.1.0",
+  "websiteUrl": "https://pipeworx.io/packs/nasa-firms",
+  "repository": {
+    "url": "https://github.com/pipeworx-io/mcp-nasa-firms",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://gateway.pipeworx.io/nasa-firms/mcp"
+    }
+  ]
+}
