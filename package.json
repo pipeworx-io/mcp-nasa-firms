@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-nasa-firms",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "NASA FIRMS MCP — active-fire / thermal-anomaly detections from MODIS and VIIRS.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-cefaef529f103554d5a835ed251172ca4d6f85554b36783d2ba9aa11de8124c3",
-    "sourceCommit": "b0fb3c31386cf0256dcf1e2f1b3440435a87ec35"
+    "sourceHash": "v1-c1d2e59963498d500ae5fe43805708a72d823db7398f5dcef920f9b64cd4d7b1",
+    "sourceCommit": "6182c4cfebddb94950e060b5d2fca18f18ad1aca"
   }
 }
