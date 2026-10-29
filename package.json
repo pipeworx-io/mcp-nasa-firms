@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-nasa-firms",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "NASA FIRMS MCP — active-fire / thermal-anomaly detections from MODIS and VIIRS.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-nasa-firms": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "nasa-firms"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-nasa-firms.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/nasa-firms",
   "pipeworx": {
-    "sourceHash": "v1-7e7e03223f2410d18aa4a67053946f200642476a85d60130770c79f4a5362926",
-    "sourceCommit": "774de7f685a75e02d0b828d24a7b94794102152c"
+    "mode": "gateway",
+    "slug": "nasa-firms",
+    "gatewaySlug": "nasa-firms",
+    "sourceHash": "v1-adcb4337221a232637f43d55564efba81a574c8a01d7a3fd2e40a5238b356bd9",
+    "sourceCommit": "5c89d6abb778d45da5d92002eb251978622bedf9"
   }
 }
